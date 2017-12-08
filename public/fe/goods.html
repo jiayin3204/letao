@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>收货地址管理</title>
+	<link rel="stylesheet" href="./css/mui.min.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/header&footer.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/goods.css">
+	<!--App自定义的css-->
+	<!--<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />-->
+	<style>
+		.mui-btn {
+			font-size: 16px;
+			padding: 8px;
+			margin: 3px;
+		}
+
+		h5.mui-content-padded {
+			margin-left: 3px;
+			margin-top: 20px !important;
+		}
+
+		h5.mui-content-padded:first-child {
+			margin-top: 12px !important;
+		}
+
+		.ui-alert {
+			text-align: center;
+			padding: 20px 10px;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="mui-bar mui-bar-nav header">
+		<a href="javascript:history.back();"  class="fa fa-arrow-left header_left"></a>
+		<a id="info" class=" mui-pull-right header_right"></a>
+		<h1 class="mui-title">收货地址管理</h1>
+	</header>
+	<!-- 底部 -->
+	<footer class="mui-bar mui-bar-tab footer">
+		<a class="mui-item" href="index.html">
+			<span class="fa fa-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-item" href="sort.html">
+			<span class="fa fa-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-item" href="cart.html">
+			<span class="fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-item" href="person.html">
+			<span class="fa fa-user"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</footer>
+	<!-- 主要内容 -->
+	<div class="content">
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<a href="address.html"><button id='showCityPicker3' class="mui-btn mui-btn-block" type='button'>添加收货地址</button></a>  
+				<!-- <div id="cityResult3" class="ui-alert"></div> -->
+			</div>
+		</div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;" class="address">
+					<div class="mui-media-body">
+						<span class="first">邮编 : 024225</span>
+						<span class="two">收货人 : 李佳音</span>
+						<p class="mui-ellipsis">北京市顺义区京顺路99号</p>
+						<i class="fa fa-angle-right"></i>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script src="./js/mui.min.js"></script>
+	<!--<script src="../js/mui.picker.min.js"></script>-->
+
+</body>
+
+</html>

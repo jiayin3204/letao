@@ -1,0 +1,39 @@
+@import 'varable.less';
+// 头部
+.header {
+	height: @headerHeight;
+	background: @headerColor;
+	h1 {
+		color: @white;
+	}
+	.header_left {
+		font-size: 20px;
+		color: @white;
+		line-height: @headerHeight;
+	}
+}
+.footer {
+	height: @footerH;
+	background: @footerBg;
+	.mui-item {
+		display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+		color: @white;
+		span:first-child {
+			font-size: @iconFont;
+		}
+		span:last-child {
+			display: block;
+			padding-top: 6px;
+		}
+	}
+	.active {
+		color: @footerActive;
+	}
+}

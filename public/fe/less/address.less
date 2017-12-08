@@ -1,0 +1,75 @@
+@import url('normalize.less');
+@import url('reset.less');
+@import 'varable.less';
+body {
+    background: @bodyBg;
+}
+.content {
+	margin-top: @headerHeight+10;
+	margin-left: @marginLeft;
+	margin-right: @marginLeft;	
+	.mui-content-padded {
+		margin: 0;
+	}
+	#cityResult3 {
+		position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 16px;
+    color: @bottonColor;
+	}
+	.mui-input-row .mui-btn {
+		width: 100%;
+		height: 38px;
+		color: @bottonColor;
+		text-align: left;
+	}
+	.eye {
+		font-size: 20px;
+		position: absolute;
+		z-index: 1;
+		top: 10px;
+		right: 0;
+		width: 38px;
+		height: 38px;
+		text-align: center;
+		color: #9a9791;
+	}
+	input {
+		border:1px solid #d0cdc7;
+		margin-bottom: @marginbottom;
+		font-size: @inputFont;
+    }
+    textarea {
+        border:1px solid #d0cdc7;
+		margin-bottom: @marginbottom;
+        font-size: @inputFont;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+	.text {
+		width: 60%;
+		font-size: @inputFont;
+		margin-bottom: @marginbottom;
+		border:1px solid #d0cdc7;
+	}
+	.btn {
+		height: @btnH;
+		width: 30%;
+		margin-left: @marginLeft;
+		font-size: @inputFont;
+		background-color: @btnBg;
+		color: @white;
+	}
+	a {
+		display: block;
+		height: @btnH;
+		width: 100%;
+		background: @btnBg;
+		text-align: center;
+		line-height: @btnH;
+		color: @white;
+        font-size: @inputFont;
+        margin-top: 25px;
+	}
+}

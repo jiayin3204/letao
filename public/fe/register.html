@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/header&footer.css">
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav header">
+    <a class="fa fa-arrow-left header_left"></a>
+    <a id="info" class="fa fa-search mui-pull-right  mui-plus-visible"></a>
+    <h1 class="mui-title">注册</h1>
+  </header>
+  <!-- 底部 -->
+  <footer class="mui-bar mui-bar-tab footer">
+    <a class="mui-item" href="index.html">
+      <span class="fa fa-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-item" href="sort.html">
+      <span class="fa fa-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-item" href="cart.html">
+      <span class="fa fa-shopping-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-item" href="person.html">
+      <span class="fa fa-user"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </footer>
+  <!-- 修改密码中心 -->
+  <div class="content">
+    <form class="form">
+      <div class="mui-input-row mui-password">
+        <input name="username" type="text" class="username" placeholder="用户名">
+      </div>
+      <div class="mui-input-row mui-password">
+        <input name="mobile" type="text" class="mobile" placeholder="手机号">
+      </div>
+      <div class="mui-input-row mui-password">
+        <input name="password" type="password" class="password" placeholder="密码">
+        <span class="fa fa-eye eye"></span>
+      </div>
+      <div class="mui-input-row mui-password">
+        <input name="newpassword" type="password" class="newpassword" placeholder="确认新密码">
+        <span class="fa fa-eye eye"></span>
+      </div>
+      <div class="vcode">
+        <input name="vCode" type="text" placeholder="认证码" class="text">
+        <input class="p" type="text" class="text">
+        <i class="btn">获取认证码</i>
+        <p class="code">请及时输入验证码</p>
+      </div>
+    </form>
+    <div class="loginin">
+      <a href="javascript:;">注册</a>
+    </div>
+  </div>
+  <!-- 会员服务协议 -->
+  <div class="agree">
+    <input type="checkbox">
+    <span>我同意《会员服务协议》</span>
+    <a href="javascript:;">立即登录</a>
+  </div>
+  <script src="./js/mui.min.js"></script>
+  <script src="./lib/zepto/zeptoT.min.js"></script>
+  <script src="./js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-27 20:38:57
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-27 22:37:35
+*/
+/* 头部nav */
+body,html{
+	background-color: #fff;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.le-header{
+	line-height: 44px;
+	background-color: #046691;
+
+}
+
+.le-header .mui-title{
+	color: #fff;
+}
+.le-search{
+	color: #fff;
+	line-height: 44px;
+}
+
+/* 文字部分开始 */
+
+.le-pro-title{
+	
+}
+
+.le-pro-title .le_pro_tle{
+	font-size: 18px;
+	padding: 15px 5px 15px 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+.le-pro-title .le_pro_sprice{
+	padding: 15px 5px 15px 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.le-pro-title .le_pro_sprice span{
+	font-size: 14px;
+}
+
+.le-pro-title .le_pro_sprice strong{
+	font-size: 24px;
+	color: #ea543d;
+	
+}
+
+.le-pro-title .le_pro_sprice del{
+	color: #afafaf;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+
+.le-pro-title .le_pro_size{
+	padding: 15px 5px 15px 5px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.le-pro-title .le_pro_size span{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #ccc;
+	line-height: 26px;
+	text-align: center;
+	
+}
+
+
+.le-pro-title .le_pro_quantity{
+	padding: 15px 5px 15px 5px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+.le_pro_quantity span{
+	vertical-align: middle;
+}
+
+.le-pro-title .mui-numbox{
+	width: 95px;
+	padding: 0px;
+}
+
+.le-pro-title .mui-numbox{
+	height: 30px;
+}
+
+.mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{
+	width: 30px;
+}
+
+/* 底部 */
+.le_pro_buy{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	/* position: relative; */
+	bottom: 0px;
+	background-color: #e6e6e6;
+	border-top: 1px solid #ccc;
+
+}
+
+.le_pro_buy .buy-btn{
+	display: block;
+	width: 40%;
+	height: 39px;
+	float: right;
+	line-height: 39px;
+	text-align: center;
+	margin-top: 6px;
+	margin-right: 4px;
+	border-radius: 5px;
+}
+
+.le_pro_buy .btn_l{
+	background-color: #991020;
+	color: #fff;
+}
+
+.le_pro_buy .btn_r{
+	background-color: #fa672d;
+	color: #fff;
+}
+
+.le_pro_buy .fa-shopping-cart{
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 14px;
+	margin-top: 13px;
+	position: absolute;
+	font-size: 26px;
+
+}
+

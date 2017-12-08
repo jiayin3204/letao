@@ -1,0 +1,48 @@
+.system .modal-header {
+  border: 0;
+  padding-bottom: 0;
+}
+.system .modal-header .nav {
+  width: 100%;
+}
+.system .modal-header .nav li {
+  width: 100%;
+}
+.system .modal-header .nav li select {
+  width: 25%;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.system .modal-body {
+  padding-top: 0;
+}
+.system .modal-body a {
+  display: block;
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #e5e5e5;
+  width: 30%;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.system .modal-body a [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  opacity: 0;
+}
+.system .modal-body img {
+  width: 34%;
+  height: auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.system nav {
+  float: right;
+}

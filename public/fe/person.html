@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/mui.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/header&footer.css">
+	<link rel="stylesheet" href="./css/person.css">
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="mui-bar mui-bar-nav header">
+		<a id="info" href="javascript:history.back();" class="fa fa-arrow-left mui-pull-left header_left"></a>
+		<h1 class="mui-title">个人中心</h1>
+	</header>
+	<!-- 底部 -->
+	<footer class="mui-bar mui-bar-tab footer">
+		<a class="mui-item" href="index.html">
+			<span class="fa fa-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-item" href="sort.html">
+			<span class="fa fa-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-item" href="cart.html">
+			<span class="fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-item active" href="person.html">
+			<span class="fa fa-user"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</footer>
+	<div class="content">
+		<div class="mui-page-content">
+			<div class="">
+				<div class="mui-scroll">
+					<ul class="top">
+						<li class="mui-table-view-cell mui-media">
+							<a class="" href="#account">
+								<div class="itcast">
+									<img src="images/1.png" alt="">
+									<span>itcast</span>
+									<p class="mui-ellipsis">绑定手机号:15049246240</p>
+								</div>
+								<i class="fa fa-angle-right right"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a href="password.html" class="">账号与安全</a>
+							<i class="fa fa-angle-right right"></i>
+						</li>
+					</ul>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a href="cart.html" class="">我的购物车</a>
+							<i class="fa fa-angle-right right"></i>
+						</li>
+					</ul>
+					<ul class="dizhi">
+						<li class="mui-table-view-cell">
+							<a href="goods.html">收货地址管理</a>
+							<i class="fa fa-angle-right right"></i>
+						</li>
+					</ul>
+					<ul class="login">
+						<li class="mui-table-view-cell" style="text-align: center;">
+							<a href="javascript:;">退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/template" id="personTemplate">
+		<a class="" href="#account">
+			<div class="itcast">
+				<img src="images/1.png" alt="<%=username%>">
+				<span><%=username%></span>
+				<p class="mui-ellipsis">绑定手机号:<%=mobile%></p>
+			</div>
+			<i class="fa fa-angle-right right"></i>
+		</a>
+	</script>
+	<script src="./js/mui.min.js"></script>
+	<script src="./lib/zepto/zeptoT.min.js"></script>
+	<script src="./lib/artTemplate/template-native.js"></script>
+	<script src="./js/person.js"></script>
+</body>
+
+</html>

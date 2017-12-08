@@ -1,0 +1,79 @@
+@import url('normalize.less');
+@import url('reset.less');
+@import 'varable.less';
+
+a {
+    -webkit-tab-highlight-color:transparent;
+}
+.header_right {
+    font-size: 20px;
+    color: @white;
+    line-height: @headerHeight;
+}
+// 主要部分
+.content {
+    height: 100%;
+    margin-top: @headerHeight;
+    padding-top: 5px;
+    position: absolute;
+    overflow: hidden;
+    .mui-navigate-right:after, .mui-push-right:after {
+        content: '';
+    }
+    .mui-table-view:before {
+        height: 0;
+    }
+    .mui-table-view .mui-media-object{
+        max-width: @imgWidth;
+        height: @imgWidth;
+    }
+    .mui-ellipsis {
+        white-space:normal;
+        padding-bottom: 8px;
+    }
+    .first {
+        color: @firstSpanC;
+    }
+    .two {
+        color: @spanColor;
+        text-decoration: line-through;
+    }
+    .pp {
+        margin-top: 10px;
+    }
+    i {
+        color: @icolor;
+        margin-right: 10px;
+    }
+    input {
+        position: absolute;
+        left: 20px;
+        bottom: 12px;
+    }
+    .right {
+        position: absolute;
+        right: 2px;
+        bottom: 42px;
+        font-size: 20px;
+        color: #d0cdc7;
+    }
+    .sum {
+        position: fixed;
+        bottom: 48px;
+        left: 0;
+        height: @sumHeight;
+        width: 100%;
+        line-height: @sumHeight;
+        border-top: 1px solid @sumBorder;
+        padding: 0 0 0 20px;
+        color: @sumBg;
+        font-weight: 700;
+        a {
+            // float: right;
+            background: @sumBg;
+            width: 100px;
+            text-align: center;
+            color: @white;
+        }
+    }
+}

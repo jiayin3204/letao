@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>搜索中心</title>
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/mui.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/header&footer.css">
+	<link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="mui-bar mui-bar-nav header">
+		<a href="javascript:history.back();" class="fa fa-arrow-left header_left"></a>
+		<a id="info" class="fa fa-search mui-pull-right  mui-plus-visible"></a>
+		<h1 class="mui-title">搜索中心</h1>
+	</header>
+	<!-- 底部 -->
+	<footer class="mui-bar mui-bar-tab footer">
+		<a class="mui-item" href="index.html">
+			<span class="fa fa-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-item" href="sort.html">
+			<span class="fa fa-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-item" href="cart.html">
+			<span class="fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-item" href="person.html">
+			<span class="fa fa-user"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</footer>
+	<div class="content">
+		<div class="search">
+			<input type="text" placeholder="搜索喜爱的商品" id="search_input">
+			<button class="search_btn">搜索</button>
+		</div>
+		<div class="dv">
+			<div class="copy">
+				<p>没有历史记录</p>
+			</div>
+		</div>
+		<!-- <div class="copy">
+			<span class="mui-pull-left">搜索历史</span>
+			<span class="mui-pull-right clear" id="clear-all">
+				<i class="fa fa-trash"></i> 清空记录
+			</span>
+			<ul>
+				<li>
+					<span>nike</span>
+					<i class="icon_delete fa fa-close"></i>
+				</li>
+			</ul>
+		</div> -->
+	</div>
+	<script src="./js/mui.min.js"></script>
+	<script src="./js/zepto.js"></script>
+	<script src="./js/search.js"></script>
+	<script src="./lib/artTemplate/template-native.js"></script>
+	<script type="text/template" id="tem">
+<div class="copy">
+	<%if(list.length==0){%>
+		<div class="copy">
+			<p>没有历史记录</p>
+		</div>
+	<%}else {%>
+		<div class="copy">
+			<span class="mui-pull-left">搜索历史</span>
+			<span class="mui-pull-right clear" id="clear-all">
+			<i class="fa fa-trash"></i> 清空记录
+			</span>
+			<ul>
+				<%for(var i = 0;i<list.length;i++){%>
+					<li>
+						<span><%=list[i]%></span>
+						<i class="icon_delete fa fa-close"></i>
+					</li>
+				<%}%>						
+			</ul>
+		</div>	
+	<%}%>
+			
+		</div>
+	</script>
+</body>
+<script>
+
+	var data = {
+		list : "ccc"
+	}
+</script>
+</html>

@@ -1,0 +1,90 @@
+@import url('normalize.less');
+@import url('reset.less');
+@import 'varable.less';
+
+.footer {
+	background: @footBg;
+	span {
+		padding-left: @spanPL;
+		line-height: @footerHeight;
+		font-size: @spanFont;
+		color: @spanColor;
+	}
+		a {
+			margin-top: 4px;
+			display: inline-block;
+			width: 30%;
+			height: @aheight;
+			line-height: @aheight;
+			text-align: center;
+			color: @white;
+			border-radius: 5px;
+			font-size: @sizeFont;
+		}
+		.buy {
+			background:@buyBg; 
+			margin-right: @aMargin; 
+		}
+		.cart {
+			margin-right: @aMargin;
+			background: @cartColor;
+		}
+
+}
+
+.content {
+	padding: 0 5px;
+	height: 100%;
+	overflow: hidden;
+	.scroll {
+		height: 100%;
+	}
+  .top {
+    padding-top: 10px;
+    border-bottom: 1px solid @borderColor;
+    height: @priceHeight;		
+		p{
+			 font-size: 18px;
+			 color: #333;
+		}  
+  }
+  .price {
+		font-size: 16px;
+		height: @priceHeight;
+		line-height: @priceHeight;
+		border-bottom: 1px solid @borderColor;
+    .font {
+      font-size: @spanFont;
+      color: @cartColor;
+		}
+		.last {
+			color: @borderColor;
+			font-size: @sizeFont;
+			text-decoration: line-through;
+		}
+	}
+	.size {
+		height: @sizeHeight;
+		padding-top: 30px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+		font-size: @sizeFont;
+		border-bottom: 1px solid @borderColor;
+		i {
+			display: inline-block;
+			height: 20px;
+			width: 20px;
+			text-align: center;
+			line-height: 20px;
+			border: 1px solid #666;
+			margin-right: 4px;
+			&.active {
+				background-color: #f00;
+				color: @white;
+			}
+		}
+	}
+	.le_pro_quantity {
+		margin-bottom: @footerHeight;
+	}
+}

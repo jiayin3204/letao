@@ -1,0 +1,37 @@
+.header {
+  height: 44px;
+  background: #046691;
+}
+.header h1 {
+  color: #ffffff;
+}
+.header .header_left {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 44px;
+}
+.footer {
+  height: 48px;
+  background: #046691;
+}
+.footer .mui-item {
+  display: table-cell;
+  overflow: hidden;
+  width: 1%;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ffffff;
+}
+.footer .mui-item span:first-child {
+  font-size: 16px;
+}
+.footer .mui-item span:last-child {
+  display: block;
+  padding-top: 6px;
+}
+.footer .active {
+  color: #ff8207;
+}

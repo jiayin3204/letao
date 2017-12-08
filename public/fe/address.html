@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>修改收货地址</title>
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/mui.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/header&footer.css">
+	<link rel="stylesheet" href="./css/address.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="./css/app.css" />
+	<link href="./css/mui.picker.css" rel="stylesheet" />
+	<link href="./css/mui.poppicker.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="mui-bar mui-bar-nav header">
+		<a href="javascript:history.back();"  class="fa fa-arrow-left header_left"></a>
+		<a id="info" class="fa fa-search mui-pull-right  mui-plus-visible"></a>
+		<h1 class="mui-title">修改收货地址</h1>
+	</header>
+	<!-- 底部 -->
+	<footer class="mui-bar mui-bar-tab footer">
+		<a class="mui-item" href="index.html">
+			<span class="fa fa-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-item" href="sort.html">
+			<span class="fa fa-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-item" href="cart.html">
+			<span class="fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-item" href="person.html">
+			<span class="fa fa-user"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</footer>
+	<!-- 修改密码中心 -->
+	<div class="content">
+		<div class="mui-input-row mui-password">
+			<input type="text" class="" placeholder="用户名/手机号">
+		</div>
+		<div class="mui-input-row mui-password">
+			<input type="text" class="" placeholder="邮编">
+		</div>
+		<div class="mui-input-row mui-password">
+			<div class="mui-content-padded">
+				<button id='showCityPicker3' class="mui-btn mui-btn-block" type='button'>地址</button>
+				<!-- <input type="text" class="" > -->
+				<div id="cityResult3" class="ui-alert"></div>
+			</div>	
+		</div>
+		<div class="mui-input-row mui-password">
+			<textarea name="" id="" cols="30" rows="8" placeholder="具体地址"></textarea>
+		</div>
+		<div>
+			<a href="javascript:;">确认</a>
+		</div>
+	</div>
+	<script src="./js/mui.min.js"></script>
+	<script src="./js/mui.picker.js"></script>
+	<script src="./js/mui.poppicker.js"></script>
+	<script src="./js/city.data.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		(function ($, doc) {
+			$.init();
+			$.ready(function () {
+				//普通示例
+				var userPicker = new $.PopPicker();
+				userPicker.setData([{
+					value: 'ywj',
+					text: '董事长 叶文洁'
+				}, {
+					value: 'aaa',
+					text: '总经理 艾AA'
+				}, {
+					value: 'lj',
+					text: '罗辑'
+				}, {
+					value: 'ymt',
+					text: '云天明'
+				}, {
+					value: 'shq',
+					text: '史强'
+				}, {
+					value: 'zhbh',
+					text: '章北海'
+				}, {
+					value: 'zhy',
+					text: '庄颜'
+				}, {
+					value: 'gyf',
+					text: '关一帆'
+				}, {
+					value: 'zhz',
+					text: '智子'
+				}, {
+					value: 'gezh',
+					text: '歌者'
+				}]);
+				var showUserPickerButton = doc.getElementById('showUserPicker');
+				var userResult = doc.getElementById('userResult');
+				//-----------------------------------------
+				//级联示例
+				var cityPicker = new $.PopPicker({
+					layer: 2
+				});
+				cityPicker.setData(cityData);
+				var showCityPickerButton = doc.getElementById('showCityPicker');
+				var cityResult = doc.getElementById('cityResult');
+				//-----------------------------------------
+				//					//级联示例
+				var cityPicker3 = new $.PopPicker({
+					layer: 3
+				});
+				cityPicker3.setData(cityData3);
+				var showCityPickerButton = doc.getElementById('showCityPicker3');
+				// var cityResult3 = doc.getElementById('cityResult3');
+				showCityPickerButton.addEventListener('tap', function (event) {
+					cityPicker3.show(function (items) {
+						cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+						showCityPickerButton.innerHTML = "";
+						//返回 false 可以阻止选择框的关闭
+						//return false;
+					});
+				}, false);
+			});
+		})(mui, document);
+	</script>
+</body>
+
+</html>

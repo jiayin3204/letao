@@ -1,0 +1,87 @@
+@import url('normalize.less');
+@import url('reset.less');
+@import 'varable.less';
+body {
+	background: @bodyBg;
+}
+.content {
+		height: @contentHeight;
+		background: @white;
+		margin-top: @headerHeight;
+		font-size: @inputFont;
+    .mui-table-view:before {
+        height: 0;
+    }
+    .mui-table-view:after {
+        height: 0;
+    }
+    .mui-table-view-cell:after {
+        height: 0;
+		}
+		ul{
+			padding: 0 0 0 20px;
+			li {
+				height: 42px;	
+				padding: 11px 15px 11px 10px;	
+				border-bottom: 1px solid #d0cdc7;
+			}
+		}
+		.dizhi {
+			padding: 0;
+			li {
+				padding-left: 20px;
+			}
+		}
+		.top {
+			height: @topHeight;
+			li{
+				height: 100%;
+			}
+		}
+    .itcast {
+        font-size: @itcastFont;
+        img {
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
+				}
+				span {
+					position: absolute;
+					top: 17px;
+					left: 60px;
+				}
+				p{
+					position: absolute;
+					top: 35px;
+					left: 60px;
+				}
+		}
+		.right {
+			right: 15px;
+			font-size: inherit;
+			line-height: 1;
+			position: absolute;
+			top: 50%;
+			display: inline-block;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-decoration: none;
+			color: #bbb;
+	}
+    .cell {
+        // position: relative;
+        overflow: hidden;
+        padding: 11px 15px;
+		}
+		.login {
+			
+			margin-top: 10px;
+			padding: 0 10px;
+			li {
+				background: @white;
+				border-radius: 5px;
+				width: 100%;
+				border: 1px solid #d0cdc7;
+			}
+		}
+}

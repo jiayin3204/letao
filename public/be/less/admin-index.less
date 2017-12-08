@@ -1,0 +1,213 @@
+@import 'normalize.less';
+@import 'reset.less';
+@import 'variable.less';
+
+// 清除浮动
+.clearfix:after {
+	content: '';
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+// 头部
+.header {
+    height: @headerHeight;
+		background: @headerC;
+		line-height: @headerHeight;
+		i {
+			font-size: @logoFont;
+			margin-left: 210px;
+			color: @white;
+		}
+		a {
+			float: right;
+			font-size: @logoFont;
+			line-height: @headerHeight;
+			margin-right: 30px;
+			color:@white;
+		}
+}
+// 左边栏
+.nav {
+	position: relative;
+	width: 180px;
+	float: left;
+.leftsidebar_box {
+	width: 180px;
+	
+	background-color: #223233;
+	height: 750px;
+	.top {
+		.logo {
+			position: absolute;
+			top: -@headerHeight;
+			height: @headerHeight;
+			width: 180px;
+			background:@logoC;
+			font-size: @logoFont;
+			font-weight: 700;
+			text-align: center;
+			line-height: @headerHeight;
+			a {
+					color: @white;
+					display: block;
+					margin: 0 30px;
+			}     
+	}
+	}
+	dt {
+		padding-left: 40px;
+		padding-right: 10px;
+		background-repeat: no-repeat;
+		background-position: 10px center;
+		color: #f5f5f5;
+		font-size: 14px;
+		position: relative;
+		line-height: 48px;
+		cursor: pointer;
+		&.active {
+			background-color: rgb(4, 14, 14)!important;
+		}
+	}
+	dd {
+		background-color: #223233;
+		padding-left: 40px;
+		padding-bottom: 10px;
+		a {
+			color: #f5f5f5;
+			line-height: 20px;
+			padding-left: 10px;
+			line-height: 16px;
+			&.active {
+				color: #127ea3;
+				font-size: 14px;
+			}
+		}
+	}
+	.jpg {
+		padding-top: @jpgPadTop;
+		position: relative;
+		img {
+			margin-left: @imageMarL;
+			width: @imageWidth;
+			border-radius: 50%;
+			margin-bottom: 20px;
+		}
+		span {
+			color: @white;
+			display: inline-block;			
+			position: absolute;
+			top: 52px;
+			left: 80px;
+		}
+	}
+}
+}
+// 模拟框样式
+.btn_button {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+// 模拟框头部样式
+.modal-header {
+	h4 {
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+.modal-body {
+	input {
+		height: 36px;
+		width: 100%;
+		border-radius: 5px;
+		border: 1px solid #e5e5e5;
+		padding-left: 10px;
+		margin-bottom: 10px;
+	}
+	span {
+		color: rgb(207, 8, 8);
+		font-size: 14px;
+
+	}
+}
+// 中间主要部分
+.system {
+	padding: 20px 15px;
+	box-sizing: border-box;
+	float: left;
+	width: 1400px;
+	.top {
+		height: @topHeight;
+		background: @highLightColor;
+		margin-bottom: 30px;
+		ul {
+			padding: 0 15px;
+		}
+		li {
+			float: left;
+			line-height: @topHeight;
+			font-size: @topFont;
+			width: @topLiW;
+			span {
+				padding: 0 10px;
+			}
+		}
+	}
+	.active {
+		color: #1078b0;
+	}
+	.table {
+		width: 100%;
+		margin-top: 20px;
+		border: 1px solid #ccc;
+		text-align: center;
+		caption {
+			width: 80px;
+			padding: 6px 10px;
+			border: 1px solid #ccc;
+			margin-bottom: 15px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		>thead>tr>th {
+			padding: 0 10px;;
+			line-height: 50px;
+			text-align: center;
+		}
+		>tbody>tr>td {
+			padding: 0 10px;;
+			line-height: 50px;
+		}
+		tr {
+			height: 50px;
+			th {
+				text-align: center;
+			}
+		}
+		th {
+			border-right: 1px solid #ccc;
+		}
+	}
+}

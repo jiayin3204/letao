@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<b></b>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>首页</title>
+
+	<link rel="stylesheet" href="./font/css/font-awesome.css">
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/admin-index.css">
+</head>
+
+<body>
+	<div class="box">
+		<!-- 头部 -->
+		<header class="header">
+				<i class="fa fa-bars btn"></i>
+				<a href="javascript:;" class="fa fa-sign-out" data-toggle="modal" data-target=".bs"></a>
+				<div class="modal fade bs" tabindex="-1">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title">温馨提示</h4>
+							</div>
+							<div class="modal-body">
+								<span class="fa fa-exclamation-triangle"></span>
+								<span>您确定要退出系统吗?</span>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn_button btn-default" data-dismiss="modal">取消</button>
+								<a href="login.html"><button type="button" class="btn_button btn-primary">确定</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- 左侧导航条 -->
+		<div class="nav clearfix">
+			<div class="leftsidebar_box">
+				<div class="top">
+					<div class="logo">
+						<a href="javascript:;">ITCAST</a>
+					</div>
+				</div>
+				<dl>
+					<div class="jpg">
+						<img src="./image/1.png" alt="">
+						<span>超级管理员</span>
+					</div>
+				</dl>
+				<dl class="custom">
+					<dt onClick="changeImage()">
+						<i class="fa fa-user"></i>
+						<a href="userManage.html" style="color:#fff">用户管理</a>
+					</dt>
+				</dl>
+
+				<dl class="channel">
+					<dt>
+						<i class="fa fa-bars"></i>
+						分类管理
+					</dt>
+					<dd class="first_dd">
+						<a href="admin-index.html">一级分类</a>
+					</dd>
+					<dd>
+						<a href="admin-Second.html">二级分类</a>
+					</dd>
+				</dl>
+
+				<dl class="app">
+					<dt onClick="changeImage()">
+						<i class="fa fa-envira"></i>
+						商品管理
+					</dt>
+				</dl>
+
+			</div>
+		</div>
+		<!-- 管理系统 -->
+		<div class="system">
+			<div class="top">
+				<ul>
+					<li>
+						<a href="javascript:;" class="active">管理系统</a>
+						<span>/</span>
+					</li>
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+			<div id="main" style="width: 600px;height:400px;float:left;"></div>
+			<!-- 饼图 -->
+			<div id="bing" style="width: 600px;height:400px;float:right;"></div>
+	</div>
+
+	<script src="./js/jQuery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./echarts/echarts.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

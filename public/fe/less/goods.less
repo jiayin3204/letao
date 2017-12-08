@@ -1,0 +1,43 @@
+@import url('normalize.less');
+@import url('reset.less');
+@import 'varable.less';
+body {
+    background: @goodsBg;
+}
+.content {
+    margin-top:@headerHeight;
+    font-size: @addspanFont; 
+    background: @white;
+    .mui-table-view:before {
+        height: 0;
+    }
+    .mui-content-padded {
+        margin: 0;
+    }
+    .mui-btn {
+        margin: 0;
+    }
+    .mui-btn, button {
+        border-radius: 0;
+    }
+    p {
+        height: @pHeight;
+        line-height: @pHeight;
+        text-align: center;
+        color: @goodsColor;
+    }
+    .address {
+        position: relative;
+        p {
+            text-align: left;
+            color: #d0cdc7;
+        }
+        i{
+            position: absolute;
+            right: 8px;
+            bottom: 26px;
+            font-size: 20px;
+            color: #d0cdc7;
+        }
+    }
+}
